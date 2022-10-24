@@ -16,8 +16,7 @@
                     <label for="inputPassword6" class="col-form-label">ECO2</label>
                 </div>
                 <div class="col-auto">
-                    <input type="password" id="inputPassword6" class="form-control"
-                        aria-describedby="passwordHelpInline">
+                    <input type="text" id="inputPassword6" :value="eco2" class="form-control">
                 </div>
             </div>
             <div class="col">
@@ -25,8 +24,7 @@
                     <label for="inputPassword6" class="col-form-label">TVOC</label>
                 </div>
                 <div class="col-auto">
-                    <input type="password" id="inputPassword6" class="form-control"
-                        aria-describedby="passwordHelpInline">
+                    <input type="text" id="inputPassword6" :value="tvoc" class="form-control">
                 </div>
             </div>
         </div>
@@ -36,8 +34,7 @@
                     <label for="inputPassword6" class="col-form-label">Temperature</label>
                 </div>
                 <div class="col-auto">
-                    <input type="password" id="inputPassword6" class="form-control"
-                        aria-describedby="passwordHelpInline">
+                    <input type="text" id="inputPassword6" :value="temperature" class="form-control">
                 </div>
             </div>
             <div class="col">
@@ -45,8 +42,7 @@
                     <label for="inputPassword6" class="col-form-label">Humidity</label>
                 </div>
                 <div class="col-auto">
-                    <input type="password" id="inputPassword6" class="form-control"
-                        aria-describedby="passwordHelpInline">
+                    <input type="text" id="inputPassword6" :value="humidity" class="form-control">
                 </div>
             </div>
         </div>
@@ -61,7 +57,10 @@ export default {
     },
     data() {
         return {
-            count: 0,
+            eco2: 400,
+            tvoc: 0,
+            temperature: 25.0,
+            humidity: 50.0,
         }
     },
     methods: {
